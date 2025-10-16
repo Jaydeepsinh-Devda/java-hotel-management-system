@@ -19,14 +19,11 @@ public class DBConnection {
         }
     }
 
-    public static boolean stopConnection(Connection con) {
+    public static void stopConnection(Connection con) {
         try {
             con.close();
-            return true;
         } catch (SQLException e) {
             System.out.println(e.getMessage());
-            return false;
         }
-
     }
 }
