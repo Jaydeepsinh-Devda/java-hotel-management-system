@@ -31,9 +31,11 @@ public class Main {
                         break;
                     case 3:
                         // Update Reservation Method Call
+                        reservationHelper.updateReservation(con, sc);
                         break;
                     case 4:
                         // Delete Reservation Call
+                        reservationHelper.deleteReservation(con, sc);
                         break;
                     case 0:
                         // Exit the Program
